@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0778bdf8a4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Neural Network Parallax Background -->
+    <div class="neural-bg" id="neuralBg">
+        <canvas id="neuralCanvas"></canvas>
+    </div>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- Logo with container for scroll animation -->
+                <div class="logo-container" id="logoContainer">
+                    <img src="Images/logo.png" class="nav-logo" alt="Logo">
+                </div>
+                <ul>
+                    <li> <a href="#home">Home</a></li>
+                    <li> <a href="#about">About</a></li>
+                    <li> <a href="#features">Website Features</a></li>
+                    <li> <a href="#portfolio">Portfolio</a></li>
+                    <li> <a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1> Hi , I'm <span> Aryanav Raj Sinha</span> <br> I am from India </h1>
+            </div>
+        </div>
+    </div>
+
+    <!---------------about-------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-column-1">
+                    <div class="circular-frame">
+                        <img src="Images/image.png" alt="Profile">
+
+                    </div>
+                </div>
+                <div class="about-column-2">
+                    <h1 class="Subtitle"> About me</h1>
+                    <p>I'm a passionate web developer with expertise in creating stunning, responsive websites. With a
+                        keen
+                        eye for design and a commitment to excellence, I bring ideas to life through clean code and
+                        innovative solutions.</p>
+                    <br>
+                    <p>My journey in web development started several years ago, and I've been dedicated to mastering
+                        modern
+                        technologies and best practices ever since. I believe in creating websites that not only look
+                        beautiful but also provide exceptional user experiences.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        <p class="tab-links" onclick="opentab('Experience')"> Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                            <li><span>Java Developer</span><br>An Intermediate Java Developer</li>
+                            <li><span>Spring Boot and Node</span><br>Knows Spring Boot and Node Js</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>A Computer Science Student </span><br>Pursing my Btech </li>
+                            <li><span>Actively In Search for Internships </span><br>In search of Stipend Based
+                                Internships</li>
+                            <li><span>Honing Skills Everyday </span><br> DSA MAKE ME CRY</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>No work Experience Yet</span><br>I just once became a Tutor for a 10th class child
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------------------------Features----------------->
+    <section id="features">
+        <canvas id="featuresNeuralCanvas"></canvas>
+        <div class="features-container">
+            <h2 class="section-title">Website Features</h2>
+            <div class="features-row">
+                <!-- Feature 1 -->
+                <div class="feature-card">
+                    <i class="fa-solid fa-database"></i>
+                    <h3>Data Collecting</h3>
+                    <p>Currently I am in my 2nd Semester. This is my first ever website which I made for data
+                        collection. After I gain my knowledge of DBMS I will RETURN.</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+                <!-- Feature 2 -->
+                <div class="feature-card">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Practice and Experimentation</h3>
+                    <p>I can do whatever I want with my website and I basically use this site for testing and creating a
+                        quick website. I shape the website in whatever the moment calls for lol. I think it's pretty
+                        cool yeah?</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+                <!-- Feature 3 -->
+                <div class="feature-card">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <h3>Acts Like a Progress Bar</h3>
+                    <p>This website constantly reminds me of what I have learned or what to learn next. This will sure
+                        take a lot of time to learn EVERYTHING!!</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--------------------------Portfolio----------------->
+    <div id="portfolio">
+        <div class="container">
+            <div class="sub-titles">My Projects</div>
+            <p class="section-description">Explore my journey through code — All projects are available
+                on GitHub</p>
+
+            <div class="work-list">
+                <!-- Node and Express Projects Card -->
+                <div class="work-item">
+                    <div class="project-icon">
+                        <i class="fa-brands fa-node-js"></i>
+                    </div>
+                    <div class="project-badge">Featured</div>
+                    <img src="Images/Node-Express.svg" alt="Node and Express Projects">
+                    <h3>Node & Express Projects</h3>
+                    <div class="tech-tags">
+                        <span>Node.js</span>
+                        <span>Express.js</span>
+                        <span>REST APIs</span>
+                    </div>
+                    <p class="project-description">All of my Node.js / Express.js projects can be viewed here. Building
+                        scalable backend applications with modern frameworks.</p>
+                    <div class="project-stats">
+                        <span><i class="fa-regular fa-folder-open"></i> 8+ Projects</span>
+                        <span><i class="fa-regular fa-star"></i> REST APIs</span>
+                    </div>
+                    <a href="https://github.com/Aryanav7/Node-PROJECTS-and-Codes" class="project-link" target="_blank">
+                        <i class="fa-solid fa-code-branch"></i> View All Projects
+                    </a>
+                </div>
+
+                <!-- Java Projects Card -->
+                <div class="work-item">
+                    <div class="project-icon">
+                        <i class="fa-brands fa-java"></i>
+                    </div>
+                    <div class="project-badge java-badge">Core Java</div>
+                    <img src="Images/java.logo.png" alt="Java Projects">
+                    <h3>Java Projects</h3>
+                    <div class="tech-tags">
+                        <span>Java SE</span>
+                        <span>OOP</span>
+                        <span>DSA</span>
+                    </div>
+                    <p class="project-description">All of my Java code and projects are here — from beginner programs to
+                        advanced applications and data structures.</p>
+                    <div class="project-stats">
+                        <span><i class="fa-regular fa-folder-open"></i> 15+ Programs</span>
+                        <span><i class="fa-regular fa-gem"></i> DSA Practice</span>
+                    </div>
+                    <a href="https://github.com/Aryanav7/Java" class="project-link" target="_blank">
+                        <i class="fa-brands fa-java"></i> View All Codes
+                    </a>
+                </div>
+
+                <!-- DBMS Projects Card -->
+                <div class="work-item">
+                    <div class="project-icon">
+                        <i class="fa-solid fa-database"></i>
+                    </div>
+                    <div class="project-badge dbms-badge">In Progress</div>
+                    <img src="Images/DBMS.jpg" alt="DBMS Projects">
+                    <h3>DBMS Projects</h3>
+                    <div class="tech-tags">
+                        <span>SQL</span>
+                        <span>PostgreSQL</span>
+                        <span>MongoDB</span>
+                    </div>
+                    <p class="project-description">All of my DBMS codes and projects are here. Database design, complex
+                        queries, and optimization techniques.</p>
+                    <div class="project-stats">
+                        <span><i class="fa-regular fa-folder-open"></i> 5+ Projects</span>
+                        <span><i class="fa-regular fa-chart-line"></i> SQL Expert</span>
+                    </div>
+                    <a href="https://github.com/Aryanav7/MY-DBMS.git" class="project-link" target="_blank">
+                        <i class="fa-solid fa-database"></i> View Database Projects
+                    </a>
+                </div>
+            </div>
+
+            <!-- GitHub Profile Link -->
+            <div class="github-profile">
+                <i class="fa-brands fa-github"></i>
+                <p>Check out my complete portfolio on <a href="https://github.com/Aryanav7" target="_blank">GitHub <i
+                            class="fa-solid fa-arrow-up-right-from-mins"></i></a></p>
+            </div>
+        </div>
+    </div>
+    <!-----------CONTACT------------>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-titles">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> Arnav7.v@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 9523612710 </p>
+                    <p><i class="fa-solid fa-location-dot"></i> Bihar , India</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/arnav7_/?next="><i class="fa-brands fa-instagram"
+                                style="color: rgb(255, 255, 255);"></i></a>
+                        <a href="https://www.youtube.com/@arnav.7="><i class="fa-brands fa-youtube"
+                                style="color: rgb(255, 0, 0);"></i></a>
+                        <a href="https://stackoverflow.com/users/23513084/arnav-raj"><i
+                                class="fa-brands fa-stack-overflow" style="color: rgb(212, 103, 2);"></i></a>
+                        <a href="https://leetcode.com/u/txKHi3osaP/"><i class="fa-brands fa-leetcode"
+                                style="color: rgb(252, 255, 0);"></i></a>
+                        <a href="https://www.hackerrank.com/profile/arnav7_v"><i class="fa-brands fa-hackerrank"
+                                style="color: rgb(49, 255, 0);"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <!-- MAIN FORM -->
+                    <div id="formWrapper">
+                        <form id="contactForm">
+                            <input type="text" name="Name" placeholder="👤 Your Name" required>
+                            <input type="email" name="Email" placeholder="📧 Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="💬 Your Message..."></textarea>
+                            <!-- CAPTCHA SECTION -->
+                            <div class="captcha-container"
+                                style="background: linear-gradient(135deg, #1a1a2e 0%, #000000 100%); padding: 20px; border-radius: 12px; margin: 15px 0; border: 2px solid #11ff00; box-shadow: 0 5px 15px rgba(0,0,0,0.3);">
+                                <div
+                                    style="display: flex; align-items: center; justify-content: space-between; background: #0f0f1a; padding: 15px; border-radius: 10px; margin-bottom: 15px;">
+                                    <span id="captchaCode"
+                                        style="font-size: 34px; font-weight: bold; letter-spacing: 12px; color: #00ff88; background: #000; padding: 12px 25px; border-radius: 8px; font-family: 'Courier New', monospace;">XXXXXX</span>
+                                    <button type="button" onclick="refreshCaptcha()"
+                                        style="background: #11ff00; color: #000; border: none; padding: 10px 20px; border-radius: 8px; cursor: pointer; font-size: 14px; font-weight: bold;">
+                                        <i class="fa-solid fa-rotate-right"></i> Refresh
+                                    </button>
+                                </div>
+                                <input type="text" id="captchaInput"
+                                    placeholder=" Enter the code exactly as shown above" required
+                                    style="width: 100%; padding: 12px; margin-top: 10px; border: 2px solid #333; border-radius: 8px; background: #0a0a0f; color: white; font-size: 16px;">
+                                <div id="captchaError"
+                                    style="color: #ff4444; font-size: 13px; margin-top: 10px; display: none; background: rgba(255,0,79,0.1); padding: 8px; border-radius: 5px;">
+                                    <i class="fa-solid fa-circle-exclamation"></i> ❌ Wrong CAPTCHA! Please try again.
+                                </div>
+                                <div id="captchaSuccess"
+                                    style="color: #00ff88; font-size: 13px; margin-top: 10px; display: none; background: rgba(0,255,136,0.1); padding: 8px; border-radius: 5px;">
+                                    <i class="fa-solid fa-check-circle"></i> ✅ CAPTCHA verified!
+                                </div>
+                            </div>
+
+                            <div id="errorMessage"
+                                style="color: red; font-size: 14px; margin-top: 10px; display: none;">
+                                ⚠️ Please fill all required sections
+                            </div>
+
+                            <div id="successMessage"
+                                style="color: green; font-size: 14px; margin-top: 10px; display: none;">
+                                ✅ Your form has been submitted successfully!
+                            </div>
+
+                            <button type="submit" id="submitBtn">Send Your Message <i
+                                    class="fa-solid fa-paper-plane"></i></button>
+                        </form>
+
+                        <!-- Submit Another Response Button (Hidden initially) -->
+                        <div id="anotherResponseBtn" style="display: none; margin-top: 20px; text-align: center;">
+                            <button onclick="resetAndSubmitAgain()"
+                                style="background: #28a745; color: white; padding: 12px 30px; border: none; border-radius: 8px; cursor: pointer; font-size: 16px;">
+                                <i class="fa-solid fa-plus-circle"></i> Submit Another Response
+                            </button>
+                            <p style="color: #666; font-size: 12px; margin-top: 10px;">Click to submit another message
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p> © 2026 . Aryanav Raj Sinha . All Rights Reserved </p>
+        </div>
+    </div>
+    <script>
+        // Tab ka functionality
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+
+    <script>
+        // ========== TAB FUNCTIONALITY ==========
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+                tabcontent.style.display = "none";
+            }
+            event.currentTarget.classList.add("active-link");
+            const activeTab = document.getElementById(tabname);
+            activeTab.classList.add("active-tab");
+            activeTab.style.display = "block";
+        }
+
+        // Initialize - show Skills tab by default
+        if (document.getElementById('Skills')) {
+            document.getElementById('Skills').style.display = "block";
+            document.getElementById('Education').style.display = "none";
+            document.getElementById('Experience').style.display = "none";
+        }
+
+        // ========== SCROLL ANIMATION FOR FEATURE CARDS ==========
+        const observerOptionsFeature = {
+            threshold: 0.3,
+            rootMargin: "0px 0px -50px 0px"
+        };
+
+        const featureObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                } else {
+                    entry.target.classList.remove('visible');
+                }
+            });
+        }, observerOptionsFeature);
+
+        const featureCards = document.querySelectorAll('.feature-card');
+        featureCards.forEach(card => {
+            featureObserver.observe(card);
+        });
+
+        // Section title animation
+        const sectionTitle = document.querySelector('.section-title');
+        if (sectionTitle) {
+            sectionTitle.style.opacity = '0';
+            sectionTitle.style.transform = 'translateY(30px)';
+            sectionTitle.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+
+            const titleObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    } else {
+                        entry.target.style.opacity = '0';
+                        entry.target.style.transform = 'translateY(30px)';
+                    }
+                });
+            }, { threshold: 0.5 });
+
+            titleObserver.observe(sectionTitle);
+        }
+
+        // Features section parallax
+        let tickingFeature = false;
+        window.addEventListener('scroll', () => {
+            if (!tickingFeature) {
+                requestAnimationFrame(() => {
+                    const featuresSection = document.getElementById('features');
+                    if (featuresSection) {
+                        const scrolled = window.pageYOffset;
+                        const rect = featuresSection.getBoundingClientRect();
+                        const sectionTop = rect.top + window.pageYOffset;
+                        const scrollPosition = window.pageYOffset;
+
+                        if (scrollPosition >= sectionTop - 500 && scrollPosition <= sectionTop + 500) {
+                            const rate = (scrollPosition - sectionTop) * 0.2;
+                            featuresSection.style.backgroundPosition = `50% ${rate}px`;
+                        }
+                    }
+                    tickingFeature = false;
+                });
+                tickingFeature = true;
+            }
+        });
+
+        // ========== PORTFOLIO CARD SCROLL ANIMATION ==========
+        const portfolioCards = document.querySelectorAll('.work-item');
+
+        function isElementInViewport(el) {
+            const rect = el.getBoundingClientRect();
+            const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+            return rect.top <= windowHeight - 100 && rect.bottom >= 50;
+        }
+
+        function animateCardsOnScroll() {
+            portfolioCards.forEach((card, index) => {
+                if (isElementInViewport(card)) {
+                    if (!card.classList.contains('visible')) {
+                        card.classList.add('visible');
+                    }
+                }
+            });
+        }
+
+        function animateCardsOnLoad() {
+            portfolioCards.forEach((card, index) => {
+                setTimeout(() => {
+                    if (isElementInViewport(card)) {
+                        card.classList.add('visible');
+                    }
+                }, index * 150);
+            });
+        }
+
+        // Portfolio scroll animation with throttle
+        let tickingPortfolio = false;
+        window.addEventListener('scroll', () => {
+            if (!tickingPortfolio) {
+                requestAnimationFrame(() => {
+                    animateCardsOnScroll();
+                    tickingPortfolio = false;
+                });
+                tickingPortfolio = true;
+            }
+        });
+
+        window.addEventListener('load', () => {
+            animateCardsOnLoad();
+            animateCardsOnScroll();
+        });
+
+        window.addEventListener('resize', () => {
+            animateCardsOnScroll();
+        });
+
+        // Portfolio observer
+        const portfolioObserverOptions = {
+            threshold: 0.2,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const portfolioObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, portfolioObserverOptions);
+
+        portfolioCards.forEach(card => {
+            portfolioObserver.observe(card);
+        });
+
+        // ========== LOGO SCROLL ANIMATION ==========
+        let lastScrollTop = 0;
+        const logoContainer = document.getElementById('logoContainer');
+        const scrollThreshold = 50;
+
+        if (logoContainer) {
+            logoContainer.classList.add('show-logo');
+
+            window.addEventListener('scroll', function () {
+                let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+                if (currentScroll > scrollThreshold) {
+                    if (currentScroll > lastScrollTop) {
+                        logoContainer.classList.add('hide-logo');
+                        logoContainer.classList.remove('show-logo');
+                    }
+                    else if (currentScroll < lastScrollTop) {
+                        logoContainer.classList.remove('hide-logo');
+                        logoContainer.classList.add('show-logo');
+                    }
+                }
+                else {
+                    logoContainer.classList.remove('hide-logo');
+                    logoContainer.classList.add('show-logo');
+                }
+
+                lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+            });
+        }
+
+        // ========== CAPTCHA VARIABLES ==========
+        let currentCaptcha = "";
+        let captchaVerified = false;
+        let errorCount = 0;
+
+        function generateCaptcha() {
+            const chars = 'ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz0123456789';
+            let captcha = '';
+            for (let i = 0; i < 6; i++) {
+                captcha += chars.charAt(Math.floor(Math.random() * chars.length));
+            }
+            return captcha;
+        }
+
+        function showCaptchaError() {
+            const captchaError = document.getElementById('captchaError');
+            const captchaInput = document.getElementById('captchaInput');
+            const captchaContainer = document.querySelector('.captcha-container');
+
+            if (captchaError) captchaError.style.display = 'block';
+            if (captchaInput) captchaInput.classList.add('captcha-shake');
+            if (captchaInput) captchaInput.style.borderColor = '#ff4444';
+            if (captchaContainer) captchaContainer.classList.add('captcha-error-glow');
+
+            setTimeout(() => {
+                if (captchaInput) captchaInput.classList.remove('captcha-shake');
+                if (captchaContainer) captchaContainer.classList.remove('captcha-error-glow');
+            }, 500);
+
+            setTimeout(() => {
+                if (captchaError) captchaError.style.display = 'none';
+            }, 3000);
+
+            errorCount++;
+        }
+
+        function showCaptchaSuccess() {
+            const captchaSuccess = document.getElementById('captchaSuccess');
+            if (captchaSuccess) {
+                captchaSuccess.style.display = 'block';
+                setTimeout(() => {
+                    captchaSuccess.style.display = 'none';
+                }, 2000);
+            }
+        }
+
+        function hideCaptchaError() {
+            const captchaError = document.getElementById('captchaError');
+            if (captchaError) captchaError.style.display = 'none';
+            const captchaInput = document.getElementById('captchaInput');
+            if (captchaInput) captchaInput.style.borderColor = '#333';
+        }
+
+        function refreshCaptcha() {
+            const refreshButton = document.querySelector('.captcha-container button[onclick="refreshCaptcha()"]');
+            if (refreshButton && refreshButton.disabled) {
+                console.log("Refresh button is disabled, cannot refresh CAPTCHA");
+                return;
+            }
+
+            currentCaptcha = generateCaptcha();
+            const captchaCodeSpan = document.getElementById('captchaCode');
+            const captchaInput = document.getElementById('captchaInput');
+
+            if (captchaCodeSpan) captchaCodeSpan.innerHTML = currentCaptcha;
+            if (captchaInput) {
+                captchaInput.value = '';
+                captchaInput.style.borderColor = '#333';
+            }
+
+            hideCaptchaError();
+            captchaVerified = false;
+
+            const captchaSuccess = document.getElementById('captchaSuccess');
+            if (captchaSuccess) {
+                captchaSuccess.innerHTML = '<i class="fa-solid fa-rotate-right"></i> 🔄 New CAPTCHA generated!';
+                captchaSuccess.style.display = 'block';
+                setTimeout(() => {
+                    captchaSuccess.style.display = 'none';
+                    captchaSuccess.innerHTML = '<i class="fa-solid fa-check-circle"></i> ✅ CAPTCHA verified!';
+                }, 2000);
+            }
+        }
+
+        // Initialize CAPTCHA
+        if (document.getElementById('captchaCode')) {
+            currentCaptcha = generateCaptcha();
+            document.getElementById('captchaCode').innerHTML = currentCaptcha;
+        }
+
+        // Form submission
+        const contactForm = document.getElementById('contactForm');
+        const submitBtn = document.getElementById('submitBtn');
+        const errorDiv = document.getElementById('errorMessage');
+        const successDiv = document.getElementById('successMessage');
+        const anotherResponseBtn = document.getElementById('anotherResponseBtn');
+        const formWrapper = document.getElementById('formWrapper');
+        const captchaInput = document.getElementById('captchaInput');
+        const captchaError = document.getElementById('captchaError');
+        const refreshButton = document.querySelector('.captcha-container button[onclick="refreshCaptcha()"]');
+
+        function validateCaptcha() {
+            if (!captchaInput) return false;
+            const userInput = captchaInput.value.trim();
+
+            if (userInput === "") {
+                if (captchaError) {
+                    captchaError.style.display = 'block';
+                    captchaError.innerHTML = '<i class="fa-solid fa-circle-exclamation"></i> ❌ Please enter the CAPTCHA code!';
+                }
+                if (captchaInput) captchaInput.style.borderColor = '#ff4444';
+                return false;
+            }
+
+            if (userInput === currentCaptcha) {
+                hideCaptchaError();
+                if (captchaInput) captchaInput.style.borderColor = '#00ff88';
+                captchaVerified = true;
+                showCaptchaSuccess();
+                return true;
+            } else {
+                showCaptchaError();
+                captchaVerified = false;
+                refreshCaptcha();
+                return false;
+            }
+        }
+
+        if (contactForm) {
+            contactForm.addEventListener('submit', async (e) => {
+                e.preventDefault();
+
+                const name = contactForm.querySelector('input[name="Name"]')?.value.trim() || "";
+                const email = contactForm.querySelector('input[name="Email"]')?.value.trim() || "";
+
+                if (name === "" || email === "") {
+                    if (errorDiv) {
+                        errorDiv.style.display = "block";
+                        if (successDiv) successDiv.style.display = "none";
+                        setTimeout(() => {
+                            errorDiv.style.display = "none";
+                        }, 3000);
+                    }
+                    return;
+                }
+
+                if (!validateCaptcha()) {
+                    if (captchaInput) captchaInput.focus();
+                    return;
+                }
+
+                if (errorDiv) errorDiv.style.display = "none";
+
+                if (refreshButton) {
+                    refreshButton.disabled = true;
+                    refreshButton.style.opacity = '0.5';
+                    refreshButton.style.cursor = 'not-allowed';
+                }
+
+                const originalText = submitBtn.innerHTML;
+                submitBtn.innerHTML = "✓ Submitting...";
+                submitBtn.disabled = true;
+
+                try {
+                    const scriptURL = 'https://script.google.com/macros/s/AKfycbx61fBeLyPGKGs5CI7XjGe92Mcl_Se9cAI-ws2Os30k1j8MqQAit4cfi3-CdWJiriTz/exec';
+                    const formData = new FormData(contactForm);
+                    const response = await fetch(scriptURL, { method: 'POST', body: formData });
+                    const result = await response.json();
+                    console.log('Form Submitted Successfully!', result);
+
+                    if (successDiv) successDiv.style.display = "block";
+                    submitBtn.innerHTML = "✓ Submitted Successfully!";
+
+                    const allInputs = contactForm.querySelectorAll('input, textarea, button');
+                    allInputs.forEach(input => {
+                        if (input.type !== 'button') {
+                            input.disabled = true;
+                        }
+                    });
+
+                    if (anotherResponseBtn) anotherResponseBtn.style.display = "block";
+
+                } catch (error) {
+                    console.error('Error!', error.message);
+                    submitBtn.innerHTML = "❌ Submission failed. Try again!";
+                    submitBtn.disabled = false;
+
+                    if (refreshButton) {
+                        refreshButton.disabled = false;
+                        refreshButton.style.opacity = '1';
+                        refreshButton.style.cursor = 'pointer';
+                    }
+
+                    setTimeout(() => {
+                        submitBtn.innerHTML = originalText;
+                    }, 3000);
+                }
+            });
+        }
+
+        function resetAndSubmitAgain() {
+            if (contactForm) contactForm.reset();
+            errorCount = 0;
+            refreshCaptcha();
+            captchaVerified = false;
+
+            const allInputs = contactForm?.querySelectorAll('input, textarea');
+            if (allInputs) {
+                allInputs.forEach(input => {
+                    input.disabled = false;
+                });
+            }
+
+            if (submitBtn) {
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = "Send Your Message <i class='fa-solid fa-paper-plane'></i>";
+            }
+
+            if (refreshButton) {
+                refreshButton.disabled = false;
+                refreshButton.style.opacity = '1';
+                refreshButton.style.cursor = 'pointer';
+            }
+
+            if (successDiv) successDiv.style.display = "none";
+            if (anotherResponseBtn) anotherResponseBtn.style.display = "none";
+            if (errorDiv) errorDiv.style.display = "none";
+
+            hideCaptchaError();
+
+            const captchaInputField = document.getElementById('captchaInput');
+            if (captchaInputField) {
+                captchaInputField.value = '';
+                captchaInputField.style.borderColor = '#333';
+            }
+
+            const contactRight = document.querySelector('.contact-right');
+            if (contactRight) {
+                contactRight.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+
+            if (formWrapper) {
+                const tempMsg = document.createElement('div');
+                tempMsg.style.cssText = `background: #28a745; color: white; padding: 10px; border-radius: 8px; text-align: center; margin-top: 10px; animation: fadeOut 3s forwards;`;
+                tempMsg.innerHTML = "✨ Form reset! You can submit another response. ✨";
+                formWrapper.appendChild(tempMsg);
+                setTimeout(() => tempMsg.remove(), 3000);
+            }
+        }
+
+        if (captchaInput) {
+            captchaInput.addEventListener('input', function () {
+                const userValue = this.value.trim();
+                if (userValue === currentCaptcha) {
+                    hideCaptchaError();
+                    this.style.borderColor = '#00ff88';
+                    captchaVerified = true;
+                } else if (userValue.length > 0) {
+                    this.style.borderColor = '#ff4444';
+                    captchaVerified = false;
+                } else {
+                    this.style.borderColor = '#333';
+                    captchaVerified = false;
+                }
+            });
+
+            captchaInput.addEventListener('focus', function () {
+                if (this.style.borderColor !== '#00ff88') {
+                    this.style.borderColor = '#ff004f';
+                }
+            });
+
+            captchaInput.addEventListener('blur', function () {
+                if (this.style.borderColor !== '#00ff88' && this.value.trim() !== currentCaptcha) {
+                    this.style.borderColor = '#333';
+                }
+            });
+        }
+
+        // ========== NEURAL NETWORK BACKGROUND ==========
+        const canvas = document.getElementById('neuralCanvas');
+        if (canvas) {
+            const ctx = canvas.getContext('2d');
+
+            function setCanvasSize() {
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+            }
+            setCanvasSize();
+            window.addEventListener('resize', setCanvasSize);
+
+            let nodes = [];
+            let connections = [];
+            let particles = [];
+            const NODE_COUNT = 25;
+            const CONNECTION_DISTANCE = 250;
+            const PARTICLE_COUNT = 40;
+
+            class Node {
+                constructor(x, y) {
+                    this.x = x;
+                    this.y = y;
+                    this.originalY = y;
+                    this.vx = (Math.random() - 0.5) * 0.1;
+                    this.vy = (Math.random() - 0.5) * 0.1;
+                    this.size = Math.random() * 3 + 2;
+                    this.pulse = Math.random() * Math.PI * 2;
+                }
+                update(scrollOffset) {
+                    this.y = this.originalY + scrollOffset * 0.1;
+                    this.x += this.vx * 0.3;
+                    this.y += Math.sin(Date.now() * 0.0003 + this.pulse) * 0.05;
+                    if (this.x < -50) this.x = canvas.width + 50;
+                    if (this.x > canvas.width + 50) this.x = -50;
+                    if (this.y < -100) this.y = canvas.height + 100;
+                    if (this.y > canvas.height + 100) this.y = -100;
+                }
+                draw() {
+                    if (!ctx) return;
+                    ctx.beginPath();
+                    ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                    const gradient = ctx.createRadialGradient(this.x, this.y, 0, this.x, this.y, this.size * 2);
+                    gradient.addColorStop(0, '#00ff88');
+                    gradient.addColorStop(1, '#00cc66');
+                    ctx.fillStyle = gradient;
+                    ctx.fill();
+                    ctx.shadowBlur = 8;
+                    ctx.shadowColor = '#00ff88';
+                    ctx.fill();
+                    ctx.shadowBlur = 0;
+                }
+            }
+
+            class Connection {
+                constructor(node1, node2) {
+                    this.node1 = node1;
+                    this.node2 = node2;
+                }
+                draw() {
+                    if (!ctx) return;
+                    const dx = this.node1.x - this.node2.x;
+                    const dy = this.node1.y - this.node2.y;
+                    const distance = Math.sqrt(dx * dx + dy * dy);
+                    if (distance < CONNECTION_DISTANCE) {
+                        const opacity = (1 - distance / CONNECTION_DISTANCE) * 0.3;
+                        ctx.beginPath();
+                        ctx.moveTo(this.node1.x, this.node1.y);
+                        ctx.lineTo(this.node2.x, this.node2.y);
+                        ctx.strokeStyle = `rgba(0, 255, 136, ${opacity})`;
+                        ctx.lineWidth = 1;
+                        ctx.stroke();
+                    }
+                }
+            }
+
+            class Particle {
+                constructor() {
+                    this.reset();
+                }
+                reset() {
+                    this.x = Math.random() * canvas.width;
+                    this.y = Math.random() * canvas.height;
+                    this.vx = (Math.random() - 0.5) * 0.1;
+                    this.vy = (Math.random() - 0.5) * 0.08;
+                    this.size = Math.random() * 2 + 0.5;
+                    this.life = Math.random() * 200 + 100;
+                    this.maxLife = this.life;
+                }
+                update() {
+                    this.x += this.vx;
+                    this.y += this.vy;
+                    this.life -= 0.8;
+                    if (this.x < -50 || this.x > canvas.width + 50 || this.y < -50 || this.y > canvas.height + 50 || this.life <= 0) {
+                        this.reset();
+                    }
+                }
+                draw() {
+                    if (!ctx) return;
+                    const opacity = (this.life / this.maxLife) * 0.3;
+                    ctx.beginPath();
+                    ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                    ctx.fillStyle = `rgba(0, 255, 136, ${opacity})`;
+                    ctx.fill();
+                }
+            }
+
+            function initNodes() {
+                nodes = [];
+                for (let i = 0; i < NODE_COUNT; i++) {
+                    nodes.push(new Node(Math.random() * canvas.width, Math.random() * canvas.height));
+                }
+            }
+
+            function initConnections() {
+                connections = [];
+                for (let i = 0; i < nodes.length; i++) {
+                    for (let j = i + 1; j < nodes.length; j++) {
+                        connections.push(new Connection(nodes[i], nodes[j]));
+                    }
+                }
+            }
+
+            function initParticles() {
+                particles = [];
+                for (let i = 0; i < PARTICLE_COUNT; i++) {
+                    particles.push(new Particle());
+                }
+            }
+
+            let scrollOffset = 0;
+            let targetOffset = 0;
+            window.addEventListener('scroll', () => {
+                targetOffset = window.scrollY * 0.08;
+            });
+
+            function animate() {
+                if (!ctx) return;
+                scrollOffset += (targetOffset - scrollOffset) * 0.05;
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                ctx.fillStyle = '#0a0a0f';
+                ctx.fillRect(0, 0, canvas.width, canvas.height);
+                connections.forEach(conn => conn.draw());
+                nodes.forEach(node => {
+                    node.update(scrollOffset);
+                    node.draw();
+                });
+                particles.forEach(particle => {
+                    particle.update();
+                    particle.draw();
+                });
+                requestAnimationFrame(animate);
+            }
+
+            function initNeuralNetwork() {
+                initNodes();
+                initConnections();
+                initParticles();
+                animate();
+            }
+
+            window.addEventListener('load', () => initNeuralNetwork());
+            window.addEventListener('resize', () => {
+                setCanvasSize();
+                initNodes();
+                initConnections();
+                initParticles();
+            });
+
+            let mouseX = 0, mouseY = 0;
+            document.addEventListener('mousemove', (e) => {
+                mouseX = e.clientX;
+                mouseY = e.clientY;
+                nodes.forEach(node => {
+                    const dx = node.x - mouseX;
+                    const dy = node.y - mouseY;
+                    const distance = Math.sqrt(dx * dx + dy * dy);
+                    if (distance < 150) {
+                        const angle = Math.atan2(dy, dx);
+                        const force = (150 - distance) / 150 * 0.08;
+                        node.vx += Math.cos(angle) * force;
+                        node.vy += Math.sin(angle) * force;
+                    }
+                });
+            });
+        }
+
+        console.log("All scripts loaded successfully! 🚀");
+    </script>
+</body>
+
+</html>
